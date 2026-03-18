@@ -10,7 +10,9 @@ class Person:
 
 
 def create_person_list(people: list) -> list:
-    person_list = [Person(person_dict["name"], person_dict["age"]) for person_dict in people]
+    person_list = [Person(person_dict["name"],
+                          person_dict["age"])
+                   for person_dict in people]
 
     # wife/husband
     for person_dict in people:
